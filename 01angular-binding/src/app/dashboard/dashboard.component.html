@@ -1,0 +1,29 @@
+<!-- Interpolation (moustache syntax) -->
+<h1>Interpolation</h1>
+<p>Hola {{name}}!</p>
+
+<p>
+  <img width="100px" src="{{avatarUrl}}" />
+</p>
+
+
+<!-- Property binding -->
+
+<h1>Property binding</h1>
+<p>
+  <img width="100px" [src]="avatarUrl" />
+</p>
+
+<!-- Event binding -->
+
+<h1>Event binding</h1>
+
+<input type="button" value="Cambiar imagen" (click)="changeAvatar()" />
+
+
+<!-- Two way data binding -->
+<br/>
+<label for="formName">Escribe un nombre</label>
+<input id="formName" type="text" [(ngModel)]="inputName"  />
+
+<p>El nombre que has escrito es: {{inputName}}</p>
