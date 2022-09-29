@@ -1,0 +1,11 @@
+<div id="page" [ngClass]="isLightMode? 'light-mode': 'dark-mode'">
+
+
+  <mat-icon *ngIf="isLightMode"  (click)="changeMode()" aria-label="Mode">dark_mode</mat-icon>
+  <mat-icon *ngIf="!isLightMode" (click)="changeMode()" aria-label="Mode">light_mode</mat-icon>
+
+  <mat-icon (click)="changeVisibility()" aria-label="Mode">{{visible? 'visibility_off': 'visibility'}}</mat-icon>
+  <p *ngIf="visible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, ipsa quas adipisci veniam harum repellendus,
+    distinctio voluptatum reiciendis, facilis deserunt facere minus at cum officiis! Hic recusandae odit a eum!</p>
+
+</div>

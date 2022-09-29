@@ -6,12 +6,16 @@ import { PruebaComponent } from './prueba/prueba.component';
 import { FormComponent } from './form/form.component';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgclassDirectivaComponent } from './ngclass-directiva/ngclass-directiva.component';
+import { NgclassMultipleComponent } from './ngclass-multiple/ngclass-multiple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PruebaComponent,
-    FormComponent
+    FormComponent,
+    NgclassDirectivaComponent,
+    NgclassMultipleComponent
   ],
   imports: [
     BrowserModule,

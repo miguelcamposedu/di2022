@@ -1,0 +1,14 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+}
