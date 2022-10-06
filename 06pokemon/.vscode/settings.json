@@ -1,4 +1,4 @@
 {
-    "dart.devToolsTheme": "light",
-    "workbench.colorTheme": "Default Light+"
+    "dart.devToolsTheme": "dark",
+    "workbench.colorTheme": "Default Dark+"
 }
