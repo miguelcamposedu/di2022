@@ -11,7 +11,7 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  getPeople(page: number): Observable<PeopleResponse> {
-    return this.http.get<PeopleResponse>(`${environment.apiBaseUrl}/people?page=${page}`);
+  getPeople(offset: number): Observable<PeopleResponse> {
+    return this.http.get<PeopleResponse>(`${environment.apiBaseUrl}/people?page=${offset}`);
   }
 }
