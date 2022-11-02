@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span id="logo"><img src="./assets/img/logo_pop_corn.png" width="60px">&nbsp;PopCorn</span>
+    <span class="example-spacer"></span>
+    <mat-icon (click)="requestToken()" *ngIf="!approved" class="example-icon" aria-hidden="false"
+      aria-label="Example heart icon">person
+    </mat-icon>
+    <mat-icon (click)="logout()" *ngIf="approved" class="example-icon" aria-hidden="false"
+      aria-label="Example delete icon">logout
+    </mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
